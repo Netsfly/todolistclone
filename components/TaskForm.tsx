@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 
 import { useState } from "react";
@@ -10,12 +11,28 @@ interface TaskFormProps {
 }
 
 export default function TaskForm({ addTask }: TaskFormProps) {
+=======
+import { useState } from "react";
+import { Plus } from "lucide-react";
+import { Input } from "./ui/input";
+import { Button } from "./ui/button";
+
+interface TaskFormProps {
+  onAddTask: (text: string) => void;
+}
+
+export default function TaskForm({ onAddTask }: TaskFormProps) {
+>>>>>>> 5ff5fdb (signin)
   const [newTask, setNewTask] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (newTask.trim()) {
+<<<<<<< HEAD
       addTask(newTask.trim());
+=======
+      onAddTask(newTask.trim());
+>>>>>>> 5ff5fdb (signin)
       setNewTask("");
     }
   };

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import NextAuth from "next-auth";
 import GitHub from "next-auth/providers/github";
 
@@ -10,3 +11,14 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     },
   },
 });
+=======
+
+import NextAuth from "next-auth";
+import GitHub from "next-auth/providers/github";
+import Google from "next-auth/providers/google";
+
+export const { handlers, signIn, signOut, auth } = NextAuth({
+  providers: [Google,GitHub],
+  
+});
+>>>>>>> 5ff5fdb (signin)
