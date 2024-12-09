@@ -19,11 +19,7 @@
       }
     ],
     "paths": {
-<<<<<<< HEAD
       "@/*": ["./*"]
-=======
-      "@/*": ["./src/*"]
->>>>>>> 5ff5fdb (signin)
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
