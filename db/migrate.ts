@@ -1,4 +1,4 @@
-import { db } from "./drizzle";
+import { db } from "./index";
 
 import { migrate } from "drizzle-orm/neon-http/migrator";
 

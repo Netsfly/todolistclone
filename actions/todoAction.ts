@@ -1,7 +1,7 @@
 "use server";
 import { eq, not } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
-import { db } from "@/db/drizzle";
+import { db } from "@/db/index";
 import { todo } from "@/db/schema";
 
 export const getData = async () => {

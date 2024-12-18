@@ -1,5 +1,5 @@
 {
-  "id": "520eb064-dafa-4c1f-b304-516468d1fef8",
+  "id": "05e2151c-3df0-4451-b8ca-3119e41e8eea",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -20,8 +20,8 @@
           "primaryKey": false,
           "notNull": true
         },
-        "done": {
-          "name": "done",
+        "completed": {
+          "name": "completed",
           "type": "boolean",
           "primaryKey": false,
           "notNull": true,
