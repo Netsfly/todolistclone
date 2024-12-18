@@ -14,7 +14,8 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
-
+import { Mail } from "lucide-react";
+import { Disc3 } from "lucide-react";
 export default function SignIn() {
   const { data: session, status } = useSession();
   const router = useRouter();
@@ -37,9 +38,13 @@ export default function SignIn() {
             <Github className="mr-2 h-4 w-4" />
             Sign in with GitHub
           </Button>
-          <Button className="w-full" onClick={() => signIn("github")}>
-            <Github className="mr-2 h-4 w-4" />
+          <Button className="w-full" onClick={() => signIn("google")}>
+            <Mail className="mr-2 h-4 w-4" />
             Sign in with Google
+          </Button>
+          <Button className="w-full" onClick={() => signIn("discord")}>
+            <Disc3 className="mr-2 h-4 w-4" />
+            Sign in with Discord
           </Button>
 
           <Separator />
